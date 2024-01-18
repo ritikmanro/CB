@@ -1,0 +1,29 @@
+.storyImage{
+    width: 200px;
+}
+
+
+/* 1. Descendant Selector(child) */
+.container .storyHeading h1{
+    color:rgb(6, 100, 55)
+}
+
+/* LIST STYLES */
+/* PSUEDOCLASS --> an+b, a -> Interval, b-> offset */
+
+/* 
+li:nth-child(2n+3){
+    text-decoration: underline;
+    background-color: aquamarine;
+} */
+
+/* highlighting will start from offset and will go on to intervals */
+/* li:nth-child(-3n+7){
+    text-decoration: underline;
+    background-color: aquamarine;
+} */
+
+.listItem:nth-child(-3n+7){
+    text-decoration: underline;
+    background-color: aquamarine;
+}

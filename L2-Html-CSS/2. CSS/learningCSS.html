@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- CSS- cascading style sheet -> To beautify our code -->
+    <!-- 3 Ways to apply css -->
+    <!-- 1. Internal CSS: It is written inside head tag, using <style -->
+    <!-- 2. Inline CSS: It is written inside head tag, using <style -->
+    <!-- 3. External CSS: It is written outside head tag, using <style -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* This div is a tag */
+        div{
+            color: white;
+            background-color:rgb(133, 180, 142)
+        }
+
+        /* This mydiv is a class, . is used for class */
+        .mydiv{
+            font-size: 24px;
+            color:black;
+            background-color: rgb(255, 255, 156);
+        }
+
+        /* # is used for id , id has the highest priority(specificity),  Priority order --> elementName < className < id < inline*/
+        #div1{
+            font-size: 15px;
+            color:teal
+        }
+    </style>
+</head>
+<body>
+    <div id = "div" class="mydiv">This is my div</div>
+    <div id = "div1" class="mydiv" style = "font-size: 40px;">This is my div-1</div>
+    <div id = "div2" class="mydiv">This is my div-2</div>
+
+    <span class="myspan">This is a span</span>
+</body>
+</html>
